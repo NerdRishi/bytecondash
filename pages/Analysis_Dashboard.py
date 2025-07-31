@@ -16,8 +16,9 @@ st.set_page_config(layout="centered", page_title="Analysis | Byte Consulting")
 LOGO_PATH = "assets/logo.png"
 
 # --- AUTHENTICATION SETUP (Must be same as Home.py) ---
-with open('./config.yaml') as file:
-    config = yaml.load(file, Loader=SafeLoader)
+import streamlit as st
+import yaml
+config = yaml.safe_load(st.secrets["config"])
 
 authenticator = stauth.Authenticate(
     config['credentials'],

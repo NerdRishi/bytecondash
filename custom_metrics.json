@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Marketing Cost (%)",
+        "op": "/",
+        "op1_type": "metric",
+        "op1_val": "Sales from ads (Rs)",
+        "op2_type": "metric",
+        "op2_val": "Ads spend (Rs)"
+    }
+]

@@ -18,7 +18,7 @@ LOGO_PATH = "assets/logo.png"
 # --- AUTHENTICATION SETUP (Must be same as Home.py) ---
 import streamlit as st
 import yaml
-config = yaml.safe_load(st.secrets["config"])
+config = st.secrets["config"]
 
 authenticator = stauth.Authenticate(
     config['credentials'],

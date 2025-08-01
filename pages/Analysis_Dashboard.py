@@ -23,10 +23,10 @@ credentials = yaml.safe_load(config['credentials'])
 cookie = yaml.safe_load(config['cookie'])
 
 authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days']
+    credentials,
+    cookie["name"],
+    cookie["key"],
+    cookie["expiry_days"]
 )
 
 # Use the authenticator's state from the session

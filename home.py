@@ -16,10 +16,10 @@ import yaml
 config = st.secrets["config"]
 
 authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days']
+    credentials,
+    cookie['name'],
+    cookie['key'],
+    cookie['expiry_days']
 )
 
 # --- LOGIN WIDGET ---

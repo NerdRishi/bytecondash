@@ -14,6 +14,8 @@ LOGO_PATH = "assets/logo.png"
 import streamlit as st
 import yaml
 config = st.secrets["config"]
+credentials = yaml.safe_load(config['credentials'])     # <-- THIS MUST BE HERE
+cookie = yaml.safe_load(config['cookie'])
 
 authenticator = stauth.Authenticate(
     credentials,

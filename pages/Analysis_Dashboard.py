@@ -128,7 +128,7 @@ if authentication_status:
         st.write(f'Welcome *{name}*')
         authenticator.logout('Logout', 'sidebar', key='unique_logout_sidebar_dashboard')
         st.title("Navigation")
-        st.page_link("Home.py", label="Data Management Hub", icon="🏠")
+        st.page_link("home.py", label="Data Management Hub", icon="🏠")
         st.page_link("pages/Analysis_Dashboard.py", label="Analysis Dashboard", icon="📊")
         st.divider()
         st.header("🔬 Analysis Controls")
@@ -758,4 +758,4 @@ elif authentication_status is False:
     st.error('Username/password is incorrect')
 elif authentication_status is None:
     st.warning('You must be logged in to access this page. Please go to the Home page to log in.')
-    st.page_link("Home.py", label="🏠 Go to Home Page")
+    st.page_link("home.py", label="🏠 Go to Home Page")

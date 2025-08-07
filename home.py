@@ -91,7 +91,7 @@ if authentication_status:
         st.write(f'Welcome *{name}*')
         authenticator.logout('Logout', 'sidebar')
         st.title("Navigation")
-        st.page_link("Home.py", label="Data Management Hub", icon="🏠")
+        st.page_link("home.py", label="Data Management Hub", icon="🏠")
         st.page_link("pages/Analysis_Dashboard.py", label="Analysis Dashboard", icon="📊")
 
     # --- MAIN PAGE UI ---
